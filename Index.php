@@ -1,12 +1,3 @@
- <?php #include('func.php');
- require_once "func.php";
- 		if (empty($_SESSION['username'])) {
- 			# code...
- 			#header('location: index.php');
- 		}
-
-
- ?>
  <!DOCTYPE html>
  <html>
  <head>

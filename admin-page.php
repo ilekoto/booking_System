@@ -39,11 +39,11 @@
 						<label>Contact :</label>
 						<input type="text" name="contact" class="form-control"><br>
 						<label>Doctor Appointment:</label>
-						<select class="form-control" name ="">
+						<select class="form-control" name="docapp" >
 							<option value="Dr Lekoto form 6am to 6pm">Dr Lekoto form 6am to 6pm</option>
 							<option value="Dr Tloome form 6am to 6pm">Dr Tloome form 6am to 6pm</option>
 						</select><br>
-						<input type="submit" name="patient_submit" value="Enter Appointment" class="btn btn-primary">
+						<input type="submit" class="btn btn-primary"name="patient_submit" value="Enter Appointment" >
 					</form>
 				</div>
 			</div>

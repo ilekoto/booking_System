@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include("func.php");?>
 <html>
 <head>
 	<title>Patient Details</title>
@@ -18,32 +19,25 @@
 				    	<form class="form-group" action="func.php" method="post">
 				    		<div class="row">
 				    			<div class="col-md-10">
-				    		<input type="text" name="search" class="form-control"></div>
+				    		<input type="text" name="search" class="form-control" placeholder="Enter contact number"></div>
 				    		<div class="col-md-2">
-				    		<input type="submit" name="patient_search" class="btn btn-light" value="Search"></div></div>
+				    		<input type="submit" name="patient_search_submit" class="btn btn-light" value="Search"></div></div>
 				    	</form>
 				    </div> 
 				</div></div>
-			<div class="card-body" style="background-color:#3498DB; color: #ffffff">
-
+<div class="card-body" style="background-color:#3498DB; color: #ffffff">
 <table class="table table-hover">
   <thead>
     <tr>
-      <th scope="col">First Name</th>
-      <th scope="col">Last Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">Contact Details</th>
-      <th scope="col">Doctor Appointment</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Contact Details</th>
+      <th>Doctor Appointment</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Tebogo</td>
-      <td>Matshedi</td>
-      <td>t.matshedi@gmail.com</td>
-      <td>082 345 6789</td>
-      <td>Dr Lekoto</td>
-    </tr>
+   	  <?php get_patient_details(); ?>	
   </tbody>
 </table>
 </div>
